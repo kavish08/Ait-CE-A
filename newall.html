@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AIT Web</title>
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="all.css">
+  <style >
+    *{
+  margin: 0;
+  padding: 0;
+  
+  font-family: 'Poppins', sans-serif;
+} 
+body{
+  background: #969696;
+  background-position: center;
+  align-content: center;
+
+}
+table{
+  align-content: center;;
+  justify-content: center;
+  margin-left: 450px;
+}
+nav{
+  display: flex;
+  height: 110px;
+  width: 100%;
+  background: #330040;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+}
+nav .logo{
+
+  background: url(ait.png);
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  
+}
+h1{
+  float: right;
+  margin-right: 170px;
+  font-size: 40px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+
+  font-weight: 600;
+   text-shadow: 2px 2px  2px  white;
+}
+
+.menu{
+  background-color: yellow;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+
+}
+.menu ul{
+position: relative;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: yellow;
+  text-decoration: none;
+}
+ .menu ul li{
+
+  margin-top: 15px;
+  margin-left: -15px;
+  margin: 0 5px;
+}
+ .menu ul li a{
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.menu  ul li a.active,
+ ul li a:hover{
+
+  color: black;
+  text-decoration: none;
+  background: orange;
+}
+
+.footer{
+  margin-top: 800px;
+  background: black;
+  width: 100%;
+  height: 400px;
+}
+.fcontain{
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+  justify-content: center;
+  align-items: center;
+
+
+}
+.leftd{
+  width: 33.33333%;
+  float: left;
+  padding: 10px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+.centerd{
+  width: 33.33333%;
+  float: left;
+  padding: 10px;
+  color: white;
+}
+.rightd{
+  width: 33.33333%;
+  float: right;
+  padding: 10px;
+  color: white;
+
+}
+.final{
+  margin-top: 40px;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+.visit{
+
+}
+.navbar2{
+  background: white;
+  height: 50px;
+
+
+}
+ ul{
+      overflow: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left:33.33333%;
+}
+li{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+  margin: 13px 20px;
+
+
+}
+ li a{
+    padding: 3px 3px;
+    color: black
+    text-decoration: none;
+
+}
+ nav ul ul{
+  position: absolute;
+  top: 60px;
+  display: none;
+}
+nav ul li:hover > ul{
+         display: block;
+}
+nav ul ul li{
+  width: 150px;
+  float: none;
+  text-align: center;
+  background-color:  #330040;
+  display: list-item;
+  position: relative;
+}
+nav ul ul ul{
+  position: absolute;
+  top: 60px;
+  display: none;
+}
+nav  ul li ul:hover ul{
+         display: block;
+}
+nav ul ul li ul li{
+  width: 150px;
+  text-align: center;
+  float: none;
+  background-color: yellow;
+  display: list-item;
+  position: relative;
+}
+nav ul ul ul ul{
+  position: absolute;
+  top: 60px;
+  display: none;
+}
+nav ul li ul ul:  ul{
+         display: block;
+}
+ nav ul ul li ul li ul li{
+  width: 150px;
+  float: none;
+  text-align: center;
+  background-color: yellow;
+  display: list-item;
+  position: relative;
+}
+.main{
+  background: white;
+  box-sizing: border-box;
+  justify-content: center;
+ align-items: center;
+ margin-right: 33.33333%;
+
+  
+}
+.top{
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  background: white;
+}
+.main h1{
+  color: black;
+
+
+}
+
+  .top{
+    background: grey;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+  }
+    .left{
+    
+      float:left;
+      width: 50%;
+      display: flex;
+
+    }
+
+.mainc{
+
+   position: relative;
+   justify-content: center;
+   align-items: center;
+
+
+}
+.media{
+    margin-top: 5px;
+    margin-left: 25%;
+    margin-right: 15%;
+     position: relative;
+}
+.slider{
+    position: relative;
+    margin-left: 25%;
+   width: 800px;
+   height: 400px;
+   background: url(a2.jpeg);
+   
+   animation: slide 10s infinite;
+
+
+}
+@keyframes slide{
+   50%{
+      background: url(a3.jpg);
+   }
+   75%{
+      background: url(a1.jpg);
+   }
+   100%{
+      background: url(a1.jpg);
+   }
+}
+.vision, .mission{
+   height: 45vh;
+   width: 100%;
+   position: relative;
+
+}
+.vision{
+   background: orange;
+
+
+}
+.mission{
+   background:#330040;
+}
+h3{
+            color: #426696;
+         font-weight: 600; 
+         opacity: 0.8;  }
+.facility{
+   position: relative;
+      margin-top: 20px;
+    margin-left: 25%;
+     margin-right: 15%
+
+
+}
+h2{
+   position: relative;
+   color: #252829;
+   ~webkit-text-stroke:0.3vw #383d52;
+   text-transform: uppercase;
+   font-weight: 600;
+}
+
+h2::before{
+   content: attr(data-text);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%
+   height: 100%;
+   color: #01fe87;
+   ~webkit-text-stroke:0vw #383d52;
+   border-right: 2px solid #01fe87;
+   overflow: hidden;
+   animation: animate 6s linear infinite;
+
+
+}
+@keyframes animate{
+   0%,10%,100%{
+      width: 0;
+   }
+   70%,90%{
+      width: 100%;
+   }
+}
+.allf{
+   display: flex;
+}
+.footer{
+   margin-top: 20px;
+   background: black;
+   width: 100%;
+   height: 400px;
+}
+.fcontain{
+   display: flex;
+   flex-wrap: wrap;
+   margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+   justify-content: center;
+   align-items: center;
+
+
+}
+.leftd{
+   width: 33.33333%;
+   float: left;
+   padding: 10px;
+   color: white;
+   align-items: center;
+   justify-content: center;
+}
+.centerd{
+   width: 33.33333%;
+   float: left;
+   padding: 10px;
+   color: white;
+}
+.rightd{
+   width: 33.33333%;
+   float: right;
+   padding: 10px;
+   color: white;
+
+}
+.final{
+   margin-top: 40px;
+   text-align: center;
+   justify-content: center;
+   color: white;
+}
+.visit{
+
+}
+.image{
+   justify-content: center;
+   align-items: center;
+   width: 800px;
+   height: 400px;
+}
+
+</style>
+
+</head>
+<body>
+  <nav>
+      <div class="logo">
+        </div>
+        <h1>AHMEDABAD INSTITUTE OF TECHNOLOGY</h1>
+        
+      
+        </nav>
+
+    <nav class="navbar2" style="background: #17A589;">
+    <ul >
+
+
+<li ><a style="color: black;" href="newall.html">Home</a></li>
+<li><a href="abtAIT.html" style="color: black;">About</a>
+ 
+<li><a   style="color: black;" href="newc.html">Computer Engineering</a></li>
+<li><a style="color: black;"  href="index.html">All Labwork</a></li>
+
+<li><a style="color: black;" href="practical.html">Contact Us</a> </li>
+
+      
+      
+   
+  </ul>
+   </nav>
+   <!--content-->
+ 
+       <div class="mainc">
+         <div class="media">
+            <marquee direction="left">
+  <p style="color: black;">AIT signed MOU with STAD Solution||Eleven Students of CE & IT Department placed in Devstree, Synoptek, , Aimdek Technology ,ICT Infracon, Brainvire, Nirant Enterprise Pvt. Ltd. and Radixweb || Two students of Sem -6 CE & IT Department Won 2nd Prize in “Mined Hackathon” organised by Nirma University & Binghamton University. ||One Student from EC Department placed in Blazenet Ltd. || One Student from Civil Department placed in Unicon Build Space India Pvt. Ltd || One Student from EE Department placed in Star tele logic. ||Three Students from CE Department placed in Tatvasoft. || One Student from CE Department placed in Gateway || One Student from CE Department placed in E-infochip. || Forty Eight Students from various department got 10/10 SPI in Sem-8 Result (CE-15, IT-08, EC-03, Civil-03 and Mech-19).|| One Student from EC Department placed in Engineering Services International. </p>
+</marquee>
+         </div>
+<div class="slider">
+  
+</div>
+</div>
+<div class="row no-gutters">
+   <div class="col no-gutters">
+      <div class="vision"> <i class="fas fa-5x fa-eye" style="margin-left: 290px; margin-top: 20px;"></i>
+         <h3 style="text-align: center;color: white"><span style="color: #ff022c;">V</span>is<span style="color: #ff022c;">i</span>on</h3>
+         <p style="font-size: 15px; color: white;margin-left: 10px;">“To produce globally acceptable professionals by providing quality education with excellence & ethics. ” </p></div>
+   </div>
+   <div class="col no-gutters">
+      <div class="mission"> <i class="fas fa-5x fa-rocket" style="margin-left: 290px;margin-top: 30px;"></i>
+         <h3 style="text-align: center;color: white;"><span style="color: #ff022c;">M</span>iss<span style="color: #ff022c;">i</span>on</h3>
+         <p style="font-size: 15px;color: white;margin-left: 20px;">i) To provide valuable human resources to industry and society.<br>
+               ii) To create ethically and socially responsible professionals.<br>
+               iii) To build across the institute a culture of excellence in teaching & learning.<br>
+               iv) To build inclusive, diverse, and responsible community.</p></div>
+   </div>
+   
+</div>
+<div class="facility">
+      <h2 >Facilities @ AIT</h2>
+      <div class="allf">
+         <div><p><i class="fas fa-2x fa-book-reader"></i><strong style="margin-left: 5px;">Advanced & Hi-Tech Labs</strong></p>
+            <p style="text-align: justify;">All the engineering departments are well equipped
+             with modern laboratories to cater to the need of
+             training, the students as well as for industrial testing.
+              A fully equipped workshop caters to learning
+              requirements of various categories of students. </p>
+         </div>
+         <div style="margin-left: 10px;"><p><i class="fas fa-2x fa-vote-yea"></i><strong style="margin-left: 5px;">Ragging Free Campus</strong></p>
+            <p style="text-align: justify;">Anti-Ragging Squad monitors,
+             directs and oversees
+               the functions and performance of the institute to
+             prevent the ragging in the institution and also to 
+             safeguard the rights of female students,faculties and
+              staff members. </p>
+         </div>
+      </div>
+   </div>
+   <div class="facility">
+      <div class="allf">
+         <div style="margin-right: 10px;"><p><i class="fas fa-2x fa-file-invoice"></i><strong style="margin-left: 5px;">Well-Experienced Faculties</strong></p>
+            <p style="text-align: justify;">The institute has an extremely well
+             qualified and experienced faculty that make the students excel in every
+              possible scholastic and co-scholastic field. At AIT the members of academic
+               staff come from accomplished background within the field of education that have shape many of minds.  </p>
+         </div>
+         <div style="margin-left: 10px;"><p><i class="fas fa-2x fa-puzzle-piece"></i><strong style="margin-left: 5px;">Excellent Placement</strong></p>
+            <p style="text-align: justify;">The institute adopts modern practices of training 
+            and placement of the students in industries and world of work. For this purpose,
+             placement cell is created in every department with HOD as coordinator with two 
+            faculty members. </p>
+         </div>
+      </div>
+   </div>
+   <div class="facility">
+      <div class="allf">
+         <div style="margin-right: 10px;"><p><i class="fas fa-2x fa-chalkboard-teacher"></i><strong style="margin-left: 5px;">Smart Class</strong></p>
+            <p style="text-align: justify;">Smart technology-enhanced classrooms that foster opportunities for teaching and learning by integrating cutting-edge technologies and tat cultivates education by opening doors to digital teaching and learning methods for both the techers & students.  </p>
+         </div>
+         <div style="margin-left: 10px;"><p><i class="fas fa-2x fa-basketball-ball"></i><strong style="margin-left: 5px;">Sports Facilities</strong></p>
+            <p style="text-align: justify;">The institute adopts modern practices of training 
+            and placement of the students in industries and world of work. For this purpose,
+             placement cell is created in every department with HOD as coordinator with two 
+            faculty members. </p>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+
+
+<!-- footer -->
+<section class="footer">
+  <div class="fcontain">
+  <div class="leftd">
+    <h3>Reach Us</h3>
+    <p><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i>Nr. Vasantnagar Township, Gota-Ognaj Road,<br> Ahmedabad, GUJARAT- 382470 </p>
+    <p><i class="fas fa-phone-alt" style="margin-right: 5px;"></i>+91-9510900587</p>
+    <p><i class="far fa-envelope" style="margin-right: 5px;"></i>info@aitindia.in</p>
+    <p><i class="far fa-envelope" style="margin-right: 5px;"></i>admission@aitindia.in</p>
+  </div>
+  <div class="centerd">
+    <h3>Connect with Us</h3>
+    <p><i class="fab fa-facebook-square" style="margin-right: 5px;"></i>Connect With Us </p>
+    
+    <div class="visit"> <h1 style="box-sizing: border-box; background: skyblue;width: 250px;text-align: center; border-radius: 20px;height: 50px;
+    box-shadow: 0 0 50px #0f0,
+          inset 0 0 50px #0f0;
+          ~webkit-box-reflect: below 10px linear-gradient(transparent,transparent,#0002);
+          " id="count">0</h1>
+      <h3 style="position: relative; margin-left: 85px;">Visitors</h3></div>
+  </div>
+  <script type="text/javascript">
+  const countEl = document.getElementById('count');
+
+  updateVisitor();
+
+  function updateVisitor(){
+
+    fetch('https://api.countapi.xyz/update/jayraj/program/?amount=1')
+    .then(res => res.json())
+    .then(res => {
+      countEl.innerHTML = res.value;
+    });
+  }
+</script>
+  <div class="rightd">
+    <h3>Contact Us</h3>
+    <p ><i class="fas fa-phone-alt" style="margin-right: 5px;"></i>+91-9510909622 (For Placement)</p>
+    <p><i class="fas fa-phone-alt" style="margin-right: 5px;"></i>+91-9510900587(For Admission Inquiry)</p>
+    <p><i class="fas fa-phone-alt" style="margin-right: 5px;"></i>+91-02717241133 (For General Information)</p>
+    <p><i class="fas fa-phone-alt" style="margin-right: 5px;"></i>+91-02717241132 (For General Information) </p>
+  </div>
+
+</div>
+
+<div class="final"><p>Copyright ©2021 All rights reserved with by Ahmedabad Institute of Technology </p>
+     <p>Developed By: Kavish parikh</p></div>
+
+</section>
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
